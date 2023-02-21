@@ -1,10 +1,14 @@
 C FILE: EXMP.F90
-      SUBROUTINE FIB(A,N)
+      SUBROUTINE FIB(A,N,X)
 C
 C     CALCULATE FIRST N FIBONACCI NUMBERS
 C
+C     ALSO A SIDE EFFECT ON X
+C
       INTEGER N
+      INTEGER X
       REAL*8 A(N)
+      X = X + 1
       DO I=1,N
          IF (I.EQ.1) THEN
             A(I) = 0.0D0

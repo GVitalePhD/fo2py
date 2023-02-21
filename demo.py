@@ -11,5 +11,7 @@ os.system(cmd)
 import exmp
 print(exmp.fib.__doc__)
 a = np.zeros(16, 'd')
-exmp.fib(a)
+x = 34
+exmp.fib(a, x)
 print(a)
+print(x)
